@@ -6,7 +6,7 @@ class Database:
     def __init__(self):
         if os.path.isfile('./Database.csv'):
             self.backupDB()
-        self.db = pd.DataFrame({},columns = ['page', 'idx', 'year', 'method', 'area', 'st_price', 'final_price', 'auction_year', 'auction_month', 'auction_date'])
+        self.db = pd.DataFrame({},columns = ['page', 'idx', 'year', 'material', 'tool', 'area', 'st_price', 'final_price', 'auction_year', 'auction_month', 'auction_date'])
 
     def backupDB(self):
         now = datetime.now()
